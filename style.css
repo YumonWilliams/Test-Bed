@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+    /* background-image: url("../images/chaosbackground.png"); */
+    /* background-repeat: repeat; */
+
+}
+
+/*.imgA1 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.imgB1 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+}*/
+
+.image-row {
+    display: flex; /*use flexbox for alignment*/
+    justify-content: center; /*Center the images horzontally */
+    align-items: center; /* Center the images vertically*/
+}
+
+.image-row img {
+    max-width: 100%; /*Ensure images scale responsively*/
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 4px; /* Add some spacing between images (adjusted as neeeded) */
+}
+
+.image-zoom {
+    transition: transform 0.3s ease; /* Smooth Transition */
+}
+
+.image-zoom:hover {
+    transform: scale(1.1); /*Zoom in by 10% on hover */
+}
+
+#greekbustsize {
+    width: 600px; /*set desired width */
+    height: auto; /*Maintain aspect ratio*/
+}
+
