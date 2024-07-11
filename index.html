@@ -23,29 +23,48 @@
     }
 </script>
 <body style="background-image: url('./media/images/Chaosbackground.png');">
-   <div  class = "image-row">
-        <img
+   <div  class = "image-row" id="playAngelic">
+        <a href = "Honor.html">
+            <img
             class="imgA1, image-zoom"
             src="./media/images/Angel.png"
             alt="Image"
             onmouseover="changeImageOnHover(this)" 
             onmouseout="restoreOriginalImage(this)"
         >
-        <img
-            class="imgA1"
-            id="greekbustsize"
-            src="./media/images/greekbust.png"
-            alt="Image"
-            onmouseover="changeImageOnHover2(this)" 
-            onmouseout="restoreOriginalImage2(this)"
-        >
+        </a>
+        <a href = "Home.html">
+            <img
+                class="imgA1"
+                id="greekbustsize"
+                src="./media/images/greekbust.png"
+                alt="Image"
+                onmouseover="changeImageOnHover2(this)" 
+                onmouseout="restoreOriginalImage2(this)"
+            >  
+        </a>
+        <a href="Death.html">
         <img 
+            
             class="imgA2, image-zoom"
             src="./media/images/Angel.png"
-            alt="Image"
+            alt="mage"
             onmouseover="changeImageOnHover(this)" 
             onmouseout="restoreOriginalImage(this)"
         >
+        </a>
+      
    </div>
+   <div>
+    <img src="./media/images/"> 
+   </div>
+    <script>
+    let play = document.getElementById("playAngelic");
+        function playMusic() {
+            let audio = new Audio("media/Audio/Angelic.wav");
+            audio.play()
+        }
+        play.addEventListener("mouseover", playMusic);
+   </script>  
 </body>
 </html>
